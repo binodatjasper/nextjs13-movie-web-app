@@ -1,9 +1,11 @@
+"use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function SignUp() {
     return (
-        <section class="auth">
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.75 }} class="auth">
             <form className="auth-form">
                 <div className="auth-form-logo">
                     <Image src="/images/logo.png" alt="" width={127} height={38} />
@@ -18,6 +20,6 @@ export default function SignUp() {
                     <p>Already have an account? <Link href="/auth/signin">Sign in!</Link></p>
                 </div>
             </form>
-        </section>
+        </motion.div>
     );
 }

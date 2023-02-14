@@ -1,7 +1,9 @@
+"use client";
+import { motion } from "framer-motion";
 
 export default function AdminLayout({ children }) {
     return (
-        <>
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.75 }}>
             <section class="admin-dashboard">
                 <div class="container-fluid">
                     <div class="admin-dashboard-header">
@@ -18,6 +20,6 @@ export default function AdminLayout({ children }) {
                 </div>
             </section>
 
-        </>
+        </motion.div>
     );
 }

@@ -1,6 +1,9 @@
+"use client";
+import { motion } from "framer-motion";
+
 export default function AdminDashboardSetting() {
     return (
-        <section class="admin-dashboard">
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.75 }} class="admin-dashboard">
             <div class="container-fluid">
                 <div class="admin-dashboard-header">
                     <h2>Admin Dashboard Settings</h2>
@@ -14,6 +17,6 @@ export default function AdminDashboardSetting() {
                     </div>
                 </div>
             </div>
-        </section>
+        </motion.div>
     );
 }

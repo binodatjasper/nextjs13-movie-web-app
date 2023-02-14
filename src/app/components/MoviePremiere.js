@@ -107,10 +107,10 @@ export default function MoviePremiere() {
     return (
         <section className="movie-premiere">
             <div className="container">
-                <div className="movie-premiere-title">
+                <div className="movie-premiere-title" data-aos="fade-up">
                     <h2>Expected premiere</h2>
                 </div>
-                <div className="movie-premiere-content">
+                <div className="movie-premiere-content" data-aos="fade-up">
                     <Slider {...PremiereSliders}>
                         {
                             movieList.map((item, index) => {

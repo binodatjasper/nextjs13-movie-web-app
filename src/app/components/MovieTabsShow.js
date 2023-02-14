@@ -13,7 +13,7 @@ export default function MovieTabsShow() {
         <section className="movie-tabs-show">
             <div className="container">
                 <div className="movie-tabs-button">
-                    <ul>
+                    <ul data-aos="fade-up">
                         <li>
                             <button
                                 className={activeTab === 'new-releases' ? 'active' : ''}
@@ -48,7 +48,7 @@ export default function MovieTabsShow() {
                         </li>
                     </ul>
                 </div>
-                <div className="movie-tabs-content">
+                <div className="movie-tabs-content" data-aos="fade-up">
                     <div className={activeTab === 'new-releases' ? 'movie-tabs-item active' : 'movie-tabs-item'}>
                         <NewReleasesList />
                     </div>

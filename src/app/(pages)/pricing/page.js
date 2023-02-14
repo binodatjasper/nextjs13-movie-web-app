@@ -1,9 +1,11 @@
-import Link from "next/link";
+"use client";
+import { motion } from "framer-motion";
+
 import AboutFeaturesList from "../about/AboutFeaturesList";
 
 export default function Pricing() {
     return (
-        <section className="content">
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.75 }} className="content">
             <div className="container">
                 <div className="content__container">
                     <div className="page-title">
@@ -72,6 +74,6 @@ export default function Pricing() {
 
                 </div>
             </div>
-        </section >
+        </motion.div >
     );
 }
