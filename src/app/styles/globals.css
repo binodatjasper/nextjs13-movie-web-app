@@ -231,12 +231,15 @@ hr {
     color: #fff;
     font-size: 16px;
     font-weight: 700;
+    display: flex;
+    align-items: center;
 }
 
 .movie-card-detail .rating img {
     position: relative;
     width: 16px;
-    top: 3px;
+    top: -1px;
+    margin-right: 5px;
 }
 
 .movie-card:hover {
@@ -299,6 +302,15 @@ hr {
 
 .movie-tabs-item.active {
     display: block;
+}
+
+.movie-hilight-list .slick-slide {
+    padding: 5px;
+}
+
+.movie-hilight-list .movie-card .movie-link,
+.movie-hilight-list .movie-card .movie-card-detail {
+    display: none;
 }
 
 /* ============================== New Releases Item Section */

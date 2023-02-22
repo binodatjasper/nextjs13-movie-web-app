@@ -1,3 +1,4 @@
+import HilightMovieList from "./HilightMovieList";
 import MovieList from "./MovieList";
 
 export default function MovieBanner() {
@@ -10,6 +11,9 @@ export default function MovieBanner() {
                     </div>
                     <div className="movie-banner-list">
                         <MovieList />
+                    </div>
+                    <div className="movie-hilight-list">
+                        <HilightMovieList />
                     </div>
                 </div>
             </div>
