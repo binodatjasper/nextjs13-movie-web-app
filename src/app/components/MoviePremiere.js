@@ -1,9 +1,10 @@
 "use client"
+import { useRouter } from 'next/navigation';
 import Slider from "react-slick";
-import Link from "next/link";
 import MovieCard from "./MovieCard";
 
 export default function MoviePremiere() {
+    const router = useRouter();
 
     const PremiereSliders = {
         dots: false,
@@ -124,7 +125,7 @@ export default function MoviePremiere() {
                     </Slider>
                 </div>
                 <div className="movie-premiere-load-more">
-                    <Link href="/movies">SHOW MORE</Link>
+                    <a onClick={() => router.push('/movies')}>SHOW MORE</a>
                 </div>
             </div>
         </section>

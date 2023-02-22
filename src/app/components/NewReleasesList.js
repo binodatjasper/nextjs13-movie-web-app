@@ -1,7 +1,10 @@
+'use client';
+import { useRouter } from 'next/navigation';
 import Image from "next/image";
-import Link from "next/link";
 
 export default function NewReleasesList() {
+    const router = useRouter();
+
     return (
         <div className="new-releases-list">
             <div className="row">
@@ -11,9 +14,9 @@ export default function NewReleasesList() {
                             <div className="new-releases-item-thumbnail">
                                 <div className="movie-card-thumbnail">
                                     <Image src="/images/movie_poster_1.jpg" alt="" width={261} height={387} />
-                                    <Link href="/movies/movie-details" className="movie-link">
+                                    <a onClick={() => router.push("movies/movie-details")} className="movie-link">
                                         <span>View Details</span>
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -37,9 +40,9 @@ export default function NewReleasesList() {
                             <div className="new-releases-item-thumbnail">
                                 <div className="movie-card-thumbnail">
                                     <Image src="/images/movie_poster_2.jpg" alt="" width={261} height={387} />
-                                    <Link href="/movies/movie-details" className="movie-link">
+                                    <a onClick={() => router.push("movies/movie-details")} className="movie-link">
                                         <span>View Details</span>
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -63,9 +66,9 @@ export default function NewReleasesList() {
                             <div className="new-releases-item-thumbnail">
                                 <div className="movie-card-thumbnail">
                                     <Image src="/images/movie_poster_3.jpg" alt="" width={261} height={387} />
-                                    <Link href="/movies/movie-details" className="movie-link">
+                                    <a onClick={() => router.push("movies/movie-details")} className="movie-link">
                                         <span>View Details</span>
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -89,9 +92,9 @@ export default function NewReleasesList() {
                             <div className="new-releases-item-thumbnail">
                                 <div className="movie-card-thumbnail">
                                     <Image src="/images/movie_poster_4.jpg" alt="" width={261} height={387} />
-                                    <Link href="/movies/movie-details" className="movie-link">
+                                    <a onClick={() => router.push("movies/movie-details")} className="movie-link">
                                         <span>View Details</span>
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -115,9 +118,9 @@ export default function NewReleasesList() {
                             <div className="new-releases-item-thumbnail">
                                 <div className="movie-card-thumbnail">
                                     <Image src="/images/movie_poster_5.jpg" alt="" width={261} height={387} />
-                                    <Link href="/movies/movie-details" className="movie-link">
+                                    <a onClick={() => router.push("movies/movie-details")} className="movie-link">
                                         <span>View Details</span>
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -141,9 +144,9 @@ export default function NewReleasesList() {
                             <div className="new-releases-item-thumbnail">
                                 <div className="movie-card-thumbnail">
                                     <Image src="/images/movie_poster_6.jpg" alt="" width={261} height={387} />
-                                    <Link href="/movies/movie-details" className="movie-link">
+                                    <a onClick={() => router.push("movies/movie-details")} className="movie-link">
                                         <span>View Details</span>
-                                    </Link>
+                                    </a>
                                 </div>
                             </div>
                         </div>

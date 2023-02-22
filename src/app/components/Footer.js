@@ -1,7 +1,10 @@
+"use client"
+import { useRouter } from 'next/navigation';
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Footer() {
+    const router = useRouter();
+
     return (
         <footer className="footer">
             <div className="container">
@@ -24,13 +27,13 @@ export default function Footer() {
                             <h4>Resources</h4>
                             <ul className="quick-link">
                                 <li>
-                                    <Link href="/about">About Us</Link>
+                                    <a onClick={() => router.push('/about')}>About Us</a>
                                 </li>
                                 <li>
-                                    <Link href="/pricing">Pricing Plan</Link>
+                                    <a onClick={() => router.push('/pricing')}>Pricing Plan</a>
                                 </li>
                                 <li>
-                                    <Link href="/faq">Help Center</Link>
+                                    <a onClick={() => router.push('/faq')}>Help Center</a>
                                 </li>
                             </ul>
                         </div>
@@ -40,13 +43,13 @@ export default function Footer() {
                             <h4>Legal</h4>
                             <ul className="quick-link">
                                 <li>
-                                    <Link href="/terms-conditions">Terms of Use</Link>
+                                    <a onClick={() => router.push('/terms-conditions')}>Terms of Use</a>
                                 </li>
                                 <li>
-                                    <Link href="/privacy-policy">Privacy Policy</Link>
+                                    <a onClick={() => router.push('/privacy-policy')}>Privacy Policy</a>
                                 </li>
                                 <li>
-                                    <Link href="/security">Security</Link>
+                                    <a onClick={() => router.push('/security')}>Security</a>
                                 </li>
                             </ul>
                         </div>

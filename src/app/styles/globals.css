@@ -39,6 +39,10 @@ hr {
     margin-bottom: 25px;
 }
 
+a {
+    cursor: pointer;
+}
+
 /* ============================== Slickk Slider */
 .slick-slide img {
     display: inline-block;

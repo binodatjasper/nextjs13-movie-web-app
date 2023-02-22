@@ -1,11 +1,15 @@
-"use client";
+'use client';
 import { motion } from "framer-motion";
 import Image from "next/image";
 
 export default function ForgotPassword() {
+    const handleSubmit = (e) => {
+        e.preventDefault();
+    }
+
     return (
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.75 }} class="auth">
-            <form className="auth-form">
+            <form className="auth-form" onSubmit={handleSubmit}>
                 <div className="auth-form-logo">
                     <Image src="/images/logo.png" alt="" width={127} height={38} />
                 </div>

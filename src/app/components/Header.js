@@ -1,16 +1,19 @@
+'use client';
+import { useRouter } from 'next/navigation';
 import Image from "next/image";
-import Link from "next/link";
 
 export default function Header() {
+    const router = useRouter();
+
     return (
         <header className='header'>
             <div className='container'>
                 <div className="row">
                     <div className="col-sm-2">
                         <div className="header-logo">
-                            <Link href="/">
+                            <a onClick={() => router.push('/')}>
                                 <Image src="/images/logo.png" alt="" width={127} height={38} />
-                            </Link>
+                            </a>
                         </div>
                     </div>
                     <div className="col-sm-10">
@@ -18,32 +21,32 @@ export default function Header() {
                             <nav>
                                 <ul>
                                     <li>
-                                        <Link href="/home">Home</Link>
+                                        <a onClick={() => router.push('/home')}>Home</a>
                                     </li>
                                     <li>
-                                        <Link href="/about">About Us</Link>
+                                        <a onClick={() => router.push('/about')}>About Us</a>
                                     </li>
                                     <li>
-                                        <Link href="/pricing">Pricing</Link>
+                                        <a onClick={() => router.push('/pricing')}>Pricing</a>
                                     </li>
                                     <li>
-                                        <Link href="/faq">FAQ</Link>
+                                        <a onClick={() => router.push('/faq')}>FAQ</a>
                                     </li>
                                     <li>
-                                        <Link href="/contact">Contact Us</Link>
+                                        <a onClick={() => router.push('/contact')}>Contact Us</a>
                                     </li>
                                     <li>
-                                        <Link href="/admin/dashboard">Dashboard</Link>
+                                        <a onClick={() => router.push('/admin/dashboard')}>Dashboard</a>
                                     </li>
                                 </ul>
                             </nav>
                             <nav>
                                 <ul>
                                     <li>
-                                        <Link href="/auth/signin">SignIn</Link>
+                                        <a onClick={() => router.push('/auth/signin')}>SignIn</a>
                                     </li>
                                     <li>
-                                        <Link href="/auth/signup">SignUp</Link>
+                                        <a onClick={() => router.push('/auth/signup')}>SignUp</a>
                                     </li>
                                 </ul>
                             </nav>
