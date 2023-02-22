@@ -104,7 +104,7 @@ export default function HilightMovieList() {
         },
         {
             title: "Benched",
-            slug: 'benched',
+            slug: "benched",
             category: "Comedy",
             rating: 7.1,
             image: "/images/movie_poster_1.jpg"
