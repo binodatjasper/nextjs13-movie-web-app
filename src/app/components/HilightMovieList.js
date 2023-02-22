@@ -82,7 +82,7 @@ export default function HilightMovieList() {
             image: "/images/movie_poster_1.jpg"
         },
         {
-            title: "Whitney",
+            title: "Whitney Return",
             slug: 'whitney',
             category: "Romance Drama",
             rating: 6.3,
