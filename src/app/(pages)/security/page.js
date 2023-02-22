@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 export default function Security() {
     return (
         <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 0.75 }} class="content">
-            <div class="container">
-                <div class="content__container">
+            <div className="container">
+                <div className="content__container">
                     <div className="page-title">
                         <h1>Security</h1>
-                        <div class="page_title_bar"></div>
+                        <div className="page_title_bar"></div>
                     </div>
                     <div className="page-content">
                         <div className="about-page-content">
